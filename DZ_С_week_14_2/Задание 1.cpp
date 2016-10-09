@@ -23,9 +23,10 @@ void outArray(int* arr, int size)
 }
 void deleteArray(int* arr)
 {
+	if (arr == nullptr) return;
 	delete[] arr;
 }
-int* deleteSimpleNumbersToArray(int* arr, int* size)
+int* deleteSimpleNumbersFromArray(int* arr, int* size)
 {
 	int countSimpleNumbers = 0;
 	for (int i = 0; i < *size; i++)
